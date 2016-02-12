@@ -1,0 +1,14 @@
+
+<ion-navbar *navbar>
+  <ion-title>{{film.original_title}}</ion-title>
+</ion-navbar>
+
+<ion-content class='film-detail'
+            [style.backgroundImage]="image">
+  <div class='container'>
+      <p><strong>{{film.overview}}</strong></p>
+      <p><strong>Valoración: {{film.vote_average}}</strong></p>
+      <p><strong>Fecha: {{film.release_date}}</strong></p>
+      <p><strong><a class='button goCenter' (click)="seeWebsite(film)">Website</a></strong></p>
+</div>
+</ion-content>

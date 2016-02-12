@@ -1,0 +1,20 @@
+.film-detail {
+  background-size: cover;
+  position: absolute;
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+  background-color: #010D1B; opacity: .8; padding: 2.5%; border:2px solid grey;
+    p{
+      color:lighten(#fff, 60);;
+      font-weight: 900;
+      font-size: 120%;
+    }
+  .goCenter{
+    padding-top: 12px;
+  }
+  }
+}

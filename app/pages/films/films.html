@@ -1,0 +1,27 @@
+<ion-navbar *navbar>
+  <ion-title>Films</ion-title>
+</ion-navbar>
+
+<ion-content padding class="films">
+  <ion-card *ngFor="#film of films" class="film">
+
+    <ion-card-header>
+
+      <button ion-item (click)="goToFilmDetail(film)"> 
+        <img-thumbnail>
+          <img src="https://image.tmdb.org/t/p/original/{{film.poster_path}}" height="100%" width="100%">
+        </img-thumbnail>
+      </button>
+    </ion-card-header>
+
+    <ion-card-content class="outer-content">
+      <ion-list>
+        <ion-list-header>
+          Descripción
+        </ion-list-header>
+        {{film.overview}}
+      </ion-list>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
